@@ -1,10 +1,10 @@
 import { CORE_CONCEPTS } from "../data.js";
 import CoreConcept from "./CoreConcept.jsx";
+import Section from "./Section.jsx";
 
 const CoreConcepts = () => {
   return (
-    <section id="core-concepts">
-      <h2>Core Concept</h2>
+    <Section id="core-concepts" title="Core Concept">
       <ul>
         {CORE_CONCEPTS.map((concepts) => {
           return <CoreConcept key={concepts.title} {...concepts} />;
@@ -32,7 +32,7 @@ const CoreConcepts = () => {
                 image={CORE_CONCEPTS[0].image}
             /> */}
       </ul>
-    </section>
+    </Section>
   );
 };
 
